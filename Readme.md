@@ -27,13 +27,26 @@ Un proceso automático actualiza el stock de los productos cada hora para evitar
 Hay dos opciones válidas para instalar el Carrito de Compras:
 
 1. **Via Docker:**
-   - Ejecute `docker-compose up` en la raíz del proyecto.
+ - Clone el proyecto en su máquina local utilizando el comando:
+     ```bash
+     git clone https://github.com/LalegYoucef/CarritoDeCompras.git
+     ``` 
+     En la carpeta de su elección
+ - `cd tuCarpeta` y activa el venv `source myvenv/bin/activate`
+   - Ejecute `docker build -t carritodecompra` para crear la imagen y `docker run -p Port:Port carritodecompra` para ejecutar .
 
 2. **Clonando el Proyecto:**
    - Clone el proyecto en su máquina local utilizando el comando:
      ```bash
-     git clone https://github.com/tu-usuario/tu-proyecto.git
+     git clone https://github.com/LalegYoucef/CarritoDeCompras.git
      ```
-   - Siga las instrucciones en el archivo `README` para configurar y ejecutar la aplicación.
+   - `cd tuCarpeta/CarritoDeCompra` activa el venv `source ../myvenv/bin/activate`
+   - `pip install -r requirements.txt `
+   -`python manage.py runserver `
+
 
 ¡Disfrute explorando y utilizando el Carrito de Compras!
+
+# Importante 
+
+El fichero **PostmanCollection.json** contiene todas las endpoints disponibles de la app
