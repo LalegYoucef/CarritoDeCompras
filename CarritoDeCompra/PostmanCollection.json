@@ -1,461 +1,312 @@
 {
-    "info": {
-      "_postman_id": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
-      "name": "CarritoDecompra",
-      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  "info": {
+    "name": "CarritoDecompra",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "List Get Routes",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/",
+        "params": []
+      },
+      "response": []
     },
-    "item": [
-      {
-        "name": "List Get Routes",
-        "request": {
-          "method": "GET",
-          "url": "{{base_url}}/api/",
-          "description": "",
-          "header": [],
-          "body": {},
-          "urlencoded": [],
-          "params": []
-        },
-        "response": []
+    {
+      "name": "Retrieve Camiseta Crud",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/crud/{{id}}",
+        "params": [
+          {"key": "id", "value": "", "description": "", "type": "string"}
+        ]
       },
-      {
-        "name": "Retrieve Camiseta Crud",
-        "request": {
-          "method": "GET",
-          "url": "{{base_url}}/api/crud/{{id}}",
-          "description": "",
-          "header": [],
-          "body": {},
-          "urlencoded": [],
-          "params": [
-            {
-              "key": "id",
-              "value": "",
-              "description": "",
-              "type": "string"
-            }
-          ]
-        },
-        "response": []
+      "response": []
+    },
+    {
+      "name": "Create Camiseta Crud",
+      "request": {
+        "method": "POST",
+        "url": "{{base_url}}/api/crud/{{id}}",
+        "body": {"mode": "raw", "raw": "{}"},
+        "params": [
+          {"key": "id", "value": "", "description": "", "type": "string"}
+        ]
       },
-      {
-        "name": "Create Camiseta Crud",
-        "request": {
-          "method": "POST",
-          "url": "{{base_url}}/api/crud/{{id}}",
-          "description": "",
-          "header": [],
-          "body": {
-            "mode": "raw",
-            "raw": "{}"
-          },
-          "urlencoded": [],
-          "params": [
-            {
-              "key": "id",
-              "value": "",
-              "description": "",
-              "type": "string"
-            }
-          ]
-        },
-        "response": []
+      "response": []
+    },
+    {
+      "name": "Update Camiseta Crud",
+      "request": {
+        "method": "PUT",
+        "url": "{{base_url}}/api/crud/{{id}}",
+        "body": {"mode": "raw", "raw": "{}"},
+        "params": [
+          {"key": "id", "value": "", "description": "", "type": "string"}
+        ]
       },
-      {
-        "name": "Update Camiseta Crud",
-        "request": {
-          "method": "PUT",
-          "url": "{{base_url}}/api/crud/{{id}}",
-          "description": "",
-          "header": [],
-          "body": {
-            "mode": "raw",
-            "raw": "{}"
-          },
-          "urlencoded": [],
-          "params": [
-            {
-              "key": "id",
-              "value": "",
-              "description": "",
-              "type": "string"
-            }
-          ]
-        },
-        "response": []
+      "response": []
+    },
+    {
+      "name": "Destroy Camiseta Crud",
+      "request": {
+        "method": "DELETE",
+        "url": "{{base_url}}/api/crud/{{id}}",
+        "params": [
+          {"key": "id", "value": "", "description": "", "type": "string"}
+        ]
       },
-      {
-        "name": "Destroy Camiseta Crud",
-        "request": {
-          "method": "DELETE",
-          "url": "{{base_url}}/api/crud/{{id}}",
-          "description": "",
-          "header": [],
-          "body": {},
-          "urlencoded": [],
-          "params": [
-            {
-              "key": "id",
-              "value": "",
-              "description": "",
-              "type": "string"
-            }
-          ]
-        },
-        "response": []
+      "response": []
+    },
+    {
+      "name": "List Camisetas",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/camiseta/",
+        "params": [
+          {"key": "ordering", "value": "", "description": "Which field to use when ordering the results.", "type": "string"},
+          {"key": "search", "value": "", "description": "A search term.", "type": "string"}
+        ]
       },
-      {
-        "name": "List Camisetas",
-        "request": {
-          "method": "GET",
-          "url": "{{base_url}}/api/camiseta/",
-          "description": "",
-          "header": [],
-          "body": {},
-          "urlencoded": [],
-          "params": [
-            {
-              "key": "ordering",
-              "value": "",
-              "description": "Which field to use when ordering the results.",
-              "type": "string"
-            },
-            {
-              "key": "search",
-              "value": "",
-              "description": "A search term.",
-              "type": "string"
-            }
-          ]
-        },
-        "response": []
+      "response": []
+    },
+    {
+      "name": "Create Camiseta",
+      "request": {
+        "method": "POST",
+        "url": "{{base_url}}/api/camiseta/",
+        "body": {"mode": "raw", "raw": "{}"},
+        "params": []
       },
-      {
-        "name": "Create Camiseta",
-        "request": {
-          "method": "POST",
-          "url": "{{base_url}}/api/camiseta/",
-          "description": "",
-          "header": [],
-          "body": {
-            "mode": "raw",
-            "raw": "{}"
-          },
-          "urlencoded": [],
-          "params": []
-        },
-        "response": []
+      "response": []
+    },
+    {
+      "name": "Retrieve Camiseta",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/camiseta/{{id}}/",
+        "params": [
+          {"key": "id", "value": "", "description": "A unique integer value identifying this camiseta.", "type": "string"},
+          {"key": "ordering", "value": "", "description": "Which field to use when ordering the results.", "type": "string"},
+          {"key": "search", "value": "", "description": "A search term.", "type": "string"}
+        ]
       },
-      {
-        "name": "Retrieve Camiseta",
-        "request": {
-          "method": "GET",
-          "url": "{{base_url}}/api/camiseta/{{id}}/",
-          "description": "",
-          "header": [],
-          "body": {},
-          "urlencoded": [],
-          "params": [
-            {
-              "key": "id",
-              "value": "",
-              "description": "A unique integer value identifying this camiseta.",
-              "type": "string"
-            },
-            {
-              "key": "ordering",
-              "value": "",
-              "description": "Which field to use when ordering the results.",
-              "type": "string"
-            },
-            {
-              "key": "search",
-              "value": "",
-              "description": "A search term.",
-              "type": "string"
-            }
-          ]
-        },
-        "response": []
+      "response": []
+    },
+    {
+      "name": "Update Camiseta",
+      "request": {
+        "method": "PUT",
+        "url": "{{base_url}}/api/camiseta/{{id}}/",
+        "body": {"mode": "raw", "raw": "{}"},
+        "params": [
+          {"key": "id", "value": "", "description": "A unique integer value identifying this camiseta.", "type": "string"},
+          {"key": "ordering", "value": "", "description": "Which field to use when ordering the results.", "type": "string"},
+          {"key": "search", "value": "", "description": "A search term.", "type": "string"}
+        ]
       },
-      {
-        "name": "Update Camiseta",
-        "request": {
-          "method": "PUT",
-          "url": "{{base_url}}/api/camiseta/{{id}}/",
-          "description": "",
-          "header": [],
-          "body": {
-            "mode": "raw",
-            "raw": "{}"
-          },
-          "urlencoded": [],
-          "params": [
-            {
-              "key": "id",
-              "value": "",
-              "description": "A unique integer value identifying this camiseta.",
-              "type": "string"
-            },
-            {
-              "key": "ordering",
-              "value": "",
-              "description": "Which field to use when ordering the results.",
-              "type": "string"
-            },
-            {
-              "key": "search",
-              "value": "",
-              "description": "A search term.",
-              "type": "string"
-            }
-          ]
-        },
-        "response": []
+      "response": []
+    },
+    {
+      "name": "Partial Update Camiseta",
+      "request": {
+        "method": "PATCH",
+        "url": "{{base_url}}/api/camiseta/{{id}}/",
+        "body": {"mode": "raw", "raw": "{}"},
+        "params": [
+          {"key": "id", "value": "", "description": "A unique integer value identifying this camiseta.", "type": "string"},
+          {"key": "ordering", "value": "", "description": "Which field to use when ordering the results.", "type": "string"},
+          {"key": "search", "value": "", "description": "A search term.", "type": "string"}
+        ]
       },
-      {
-        "name": "Partial Update Camiseta",
-        "request": {
-          "method": "PATCH",
-          "url": "{{base_url}}/api/camiseta/{{id}}/",
-          "description": "",
-          "header": [],
-          "body": {
-            "mode": "raw",
-            "raw": "{}"
-          },
-          "urlencoded": [],
-          "params": [
-            {
-              "key": "id",
-              "value": "",
-              "description": "A unique integer value identifying this camiseta.",
-              "type": "string"
-            },
-            {
-              "key": "ordering",
-              "value": "",
-              "description": "Which field to use when ordering the results.",
-              "type": "string"
-            },
-            {
-              "key": "search",
-              "value": "",
-              "description": "A search term.",
-              "type": "string"
-            }
-          ]
-        },
-        "response": []
+      "response": []
+    },
+    {
+      "name": "Destroy Camiseta",
+      "request": {
+        "method": "DELETE",
+        "url": "{{base_url}}/api/camiseta/{{id}}/",
+        "body": {},
+        "params": [
+          {"key": "id", "value": "", "description": "A unique integer value identifying this camiseta.", "type": "string"},
+          {"key": "ordering", "value": "", "description": "Which field to use when ordering the results.", "type": "string"},
+          {"key": "search", "value": "", "description": "A search term.", "type": "string"}
+        ]
       },
-      {
-        "name": "Destroy Camiseta",
-        "request": {
-          "method": "DELETE",
-          "url": "{{base_url}}/api/camiseta/{{id}}/",
-          "description": "",
-          "header": [],
-          "body": {},
-          "urlencoded": [],
-          "params": [
-            {
-              "key": "id",
-              "value": "",
-              "description": "A unique integer value identifying this camiseta.",
-              "type": "string"
-            },
-            {
-              "key": "ordering",
-              "value": "",
-              "description": "Which field to use when ordering the results.",
-              "type": "string"
-            },
-            {
-              "key": "search",
-              "value": "",
-              "description": "A search term.",
-              "type": "string"
-            }
-          ]
-        },
-        "response": []
+      "response": []
+    },
+    {
+      "name": "List Gorras",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/gorras/",
+        "params": [
+          {"key": "ordering", "value": "", "description": "Which field to use when ordering the results.", "type": "string"},
+          {"key": "search", "value": "", "description": "A search term.", "type": "string"}
+        ]
       },
-      {
-        "name": "List Gorras",
-        "request": {
-          "method": "GET",
-          "url": "{{base_url}}/api/gorras/",
-          "description": "",
-          "header": [],
-          "body": {},
-          "urlencoded": [],
-          "params": [
-            {
-              "key": "ordering",
-              "value": "",
-              "description": "Which field to use when ordering the results.",
-              "type": "string"
-            },
-            {
-              "key": "search",
-              "value": "",
-              "description": "A search term.",
-              "type": "string"
-            }
-          ]
-        },
-        "response": []
+      "response": []
+    },
+    {
+      "name": "Create Gorras",
+      "request": {
+        "method": "POST",
+        "url": "{{base_url}}/api/gorras/",
+        "body": {"mode": "raw", "raw": "{}"},
+        "params": []
       },
-      {
-        "name": "Create Gorras",
-        "request": {
-          "method": "POST",
-          "url": "{{base_url}}/api/gorras/",
-          "description": "",
-          "header": [],
-          "body": {
-            "mode": "raw",
-            "raw": "{}"
-          },
-          "urlencoded": [],
-          "params": []
-        },
-        "response": []
+      "response": []
+    },
+    {
+      "name": "Retrieve Gorras",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/gorras/{{id}}/",
+        "params": [
+          {"key": "id", "value": "", "description": "A unique integer value identifying this gorras.", "type": "string"},
+          {"key": "ordering", "value": "", "description": "Which field to use when ordering the results.", "type": "string"},
+          {"key": "search", "value": "", "description": "A search term.", "type": "string"}
+        ]
       },
-      {
-        "name": "Retrieve Gorras",
-        "request": {
-          "method": "GET",
-          "url": "{{base_url}}/api/gorras/{{id}}/",
-          "description": "",
-          "header": [],
-          "body": {},
-          "urlencoded": [],
-          "params": [
-            {
-              "key": "id",
-              "value": "",
-              "description": "A unique integer value identifying this gorras.",
-              "type": "string"
-            },
-            {
-              "key": "ordering",
-              "value": "",
-              "description": "Which field to use when ordering the results.",
-              "type": "string"
-            },
-            {
-              "key": "search",
-              "value": "",
-              "description": "A search term.",
-              "type": "string"
-            }
-          ]
-        },
-        "response": []
+      "response": []
+    },
+    {
+      "name": "Update Gorras",
+      "request": {
+        "method": "PUT",
+        "url": "{{base_url}}/api/gorras/{{id}}/",
+        "body": {"mode": "raw", "raw": "{}"},
+        "params": [
+          {"key": "id", "value": "", "description": "A unique integer value identifying this gorras.", "type": "string"},
+          {"key": "ordering", "value": "", "description": "Which field to use when ordering the results.", "type": "string"},
+          {"key": "search", "value": "", "description": "A search term.", "type": "string"}
+        ]
       },
-      {
-        "name": "Update Gorras",
-        "request": {
-          "method": "PUT",
-          "url": "{{base_url}}/api/gorras/{{id}}/",
-          "description": "",
-          "header": [],
-          "body": {
-            "mode": "raw",
-            "raw": "{}"
-          },
-          "urlencoded": [],
-          "params": [
-            {
-              "key": "id",
-              "value": "",
-              "description": "A unique integer value identifying this gorras.",
-              "type": "string"
-            },
-            {
-              "key": "ordering",
-              "value": "",
-              "description": "Which field to use when ordering the results.",
-              "type": "string"
-            },
-            {
-              "key": "search",
-              "value": "",
-              "description": "A search term.",
-              "type": "string"
-            }
-          ]
-        },
-        "response": []
+      "response": []
+    },
+    {
+      "name": "Partial Update Gorras",
+      "request": {
+        "method": "PATCH",
+        "url": "{{base_url}}/api/gorras/{{id}}/",
+        "body": {"mode": "raw", "raw": "{}"},
+        "params": [
+          {"key": "id", "value": "", "description": "A unique integer value identifying this gorras.", "type": "string"},
+          {"key": "ordering", "value": "", "description": "Which field to use when ordering the results.", "type": "string"},
+          {"key": "search", "value": "", "description": "A search term.", "type": "string"}
+        ]
       },
-      {
-        "name": "Partial Update Gorras",
-        "request": {
-          "method": "PATCH",
-          "url": "{{base_url}}/api/gorras/{{id}}/",
-          "description": "",
-          "header": [],
-          "body": {
-            "mode": "raw",
-            "raw": "{}"
-          },
-          "urlencoded": [],
-          "params": [
-            {
-              "key": "id",
-              "value": "",
-              "description": "A unique integer value identifying this gorras.",
-              "type": "string"
-            },
-            {
-              "key": "ordering",
-              "value": "",
-              "description": "Which field to use when ordering the results.",
-              "type": "string"
-            },
-            {
-              "key": "search",
-              "value": "",
-              "description": "A search term.",
-              "type": "string"
-            }
-          ]
-        },
-        "response": []
+      "response": []
+    },
+    {
+      "name": "Destroy Gorras",
+      "request": {
+        "method": "DELETE",
+        "url": "{{base_url}}/api/gorras/{{id}}/",
+        "body": {},
+        "params": [
+          {"key": "id", "value": "", "description": "A unique integer value identifying this gorras.", "type": "string"},
+          {"key": "ordering", "value": "", "description": "Which field to use when ordering the results.", "type": "string"},
+          {"key": "search", "value": "", "description": "A search term.", "type": "string"}
+        ]
       },
-      {
-        "name": "Destroy Gorras",
-        "request": {
-          "method": "DELETE",
-          "url": "{{base_url}}/api/gorras/{{id}}/",
-          "description": "",
-          "header": [],
-          "body": {},
-          "urlencoded": [],
-          "params": [
-            {
-              "key": "id",
-              "value": "",
-              "description": "A unique integer value identifying this gorras.",
-              "type": "string"
-            },
-            {
-              "key": "ordering",
-              "value": "",
-              "description": "Which field to use when ordering the results.",
-              "type": "string"
-            },
-            {
-              "key": "search",
-              "value": "",
-              "description": "A search term.",
-              "type": "string"
-            }
-          ]
+      "response": []
+    },
+    {
+      "name": "Register User",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "http://your-api-domain/register/",
+          "protocol": "http",
+          "host": ["your-api-domain"],
+          "path": ["register"]
         },
-        "response": []
-      }
-    ]
-  }
-  
+        "body": {"mode": "raw", "raw": "{}"}
+      },
+      "response": []
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "http://your-api-domain/login/",
+          "protocol": "http",
+          "host": ["your-api-domain"],
+          "path": ["login"]
+        },
+        "body": {"mode": "raw", "raw": "{}"}
+      },
+      "response": []
+    },
+    {
+      "name": "Logout",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "http://your-api-domain/logout/",
+          "protocol": "http",
+          "host": ["your-api-domain"],
+          "path": ["logout"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "User Detail",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://your-api-domain/user_detail",
+          "protocol": "http",
+          "host": ["your-api-domain"],
+          "path": ["user_detail"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Today's Cart Items",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://your-api-domain/todays_cart_items/",
+          "protocol": "http",
+          "host": ["your-api-domain"],
+          "path": ["todays_cart_items"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add to Cart",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "http://your-api-domain/add_to_cart/",
+          "protocol": "http",
+          "host": ["your-api-domain"],
+          "path": ["add_to_cart"]
+        },
+        "body": {"mode": "raw", "raw": "{}"}
+      },
+      "response": []
+    },
+    {
+      "name": "Purchase",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "http://your-api-domain/purchase",
+          "protocol": "http",
+          "host": ["your-api-domain"],
+          "path": ["purchase"]
+        },
+        "body": {"mode": "raw", "raw": "{}"}
+      },
+      "response": []
+    }
+  ]
+}
