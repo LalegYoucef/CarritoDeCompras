@@ -1,6 +1,6 @@
 # Carrito de Compras
 
-¡Bienvenido a la prueba técnica del backend Carrito de Compras! Esta aplicación simple permite a un frontend realizar operaciones relacionadas con la gestión de productos, carrito de compras y procesos de compra de una tienda de ropa en línea, a través de APIs creadas con Django Rest Framework. A continuación, se detallan las características y funcionalidades de la aplicación.
+¡Bienvenido a la API Carrito de Compras! Esta aplicación simple permite a un frontend realizar operaciones relacionadas con la gestión de productos, carrito de compras y procesos de compra de una tienda de ropa en línea, a través de APIs creadas con Django Rest Framework. A continuación, se detallan las características y funcionalidades de la aplicación.
 
 ## Características de la Aplicación
 
